@@ -6,7 +6,7 @@
 
 -- 5 Aug 2022 --
 
-Application setup and repository initialization.
+Application setup and repository initialization...
 
 ---
 
