@@ -4,6 +4,14 @@
 
 ---
 
+-- 9 Aug 2022 --
+
+- Created component to display meal/menu items by mapping the items to a map and accessing the properties of each item and displaying them with in a card as list items.
+- Created Input component for user to specify desired amount of a food item.
+- Created form component with button for adding desired items to the cart.
+
+---
+
 -- 8 Aug 2022 --
 
 - Created Header component.
