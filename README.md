@@ -4,6 +4,12 @@
 
 ---
 
+-- 11 Aug 2022 --
+
+- Began work on cart component.
+
+---
+
 -- 9 Aug 2022 --
 
 - Created component to display meal/menu items by mapping the items to a map and accessing the properties of each item and displaying them with in a card as list items.
