@@ -4,6 +4,14 @@
 
 ---
 
+-- 12 Aug 2022 --
+
+- Cart component visually available, beginning work on functionality.
+- Cart modal window opens and closes as expected.
+- Implemented cart context provider so that it can be accessed from multiple places in the app for updating cart with new item or deleting something we dont truly want.
+
+---
+
 -- 11 Aug 2022 --
 
 - Began work on cart component.
