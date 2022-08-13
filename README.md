@@ -4,6 +4,13 @@
 
 ---
 
+-- 13 Aug 2022 --
+
+- Cart context created.
+- Cart reducer created. Next add item to cart call
+
+---
+
 -- 12 Aug 2022 --
 
 - Cart component visually available, beginning work on functionality.
