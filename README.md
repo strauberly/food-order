@@ -4,6 +4,12 @@
 
 ---
 
+-- 14 Aug 2022 --
+
+- Cart icon now updates with amount of items added to the cart.
+
+---
+
 -- 13 Aug 2022 --
 
 - Cart context created.
