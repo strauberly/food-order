@@ -1,10 +1,10 @@
 # Food Order App
 
-### An application designed to practice learned concepts in React such as state management and passing state and data between components. This README serves as a dev journal until application is complete.
+### An application designed to practice learned concepts in React such as state management and passing state and data between components, context utilization, forwarding refs, and useEffect. This README serves as a dev journal until application is complete.
 
 ---
 
--- 14 Aug 2022 --
+-- 15 Aug 2022 --
 
 - Cart icon now updates with amount of items added to the cart and displays them as desired from a cart modal.
 - Amount of an item can be edited in the cart modal and the price is reflective of those changes.
