@@ -6,6 +6,15 @@
 
 -- 14 Aug 2022 --
 
+- Cart icon now updates with amount of items added to the cart and displays them as desired from a cart modal.
+- Amount of an item can be edited in the cart modal and the price is reflective of those changes.
+- Animation added to cart button for easy visual confirmation that an item has been added to the cart.
+- This concludes the current lecture set though I believe we will be using this project again later down the road,
+
+---
+
+-- 14 Aug 2022 --
+
 - Cart icon now updates with amount of items added to the cart.
 
 ---
