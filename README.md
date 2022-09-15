@@ -4,6 +4,15 @@
 
 ---
 
+-- 15 Sept 2022 --
+
+- Recieved additional specs for application.
+    - add checkout/order form.
+    - submit orders to firebase backend.
+    - fetch meals data from firebase backend.
+
+---
+
 -- 15 Aug 2022 --
 
 - Cart icon now updates with amount of items added to the cart and displays them as desired from a cart modal.
