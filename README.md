@@ -4,6 +4,12 @@
 
 ---
 
+-- 20 Sept 2022 --
+
+-Generic error handling implementation in AvailableMeals.js in case http request fails.
+
+---
+
 -- 19 Sept 2022 --
 
 - Took a minute to get the syntax down but meals are now successfully loaded from a supabase API. Yay documentation!
