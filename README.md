@@ -1,6 +1,6 @@
 # Food Order App
 
-### An application designed to practice learned concepts in React such as state management and passing state and data between components, context utilization, forwarding refs, and useEffect. This README serves as a dev journal until application is complete.
+### An application designed to practice learned concepts in React such as state management and passing state and data between components, context utilization, forwarding refs, and useEffect. Supabase is utilized for building a quick remote backend. This README serves as a dev journal until application is complete.
 
 ---
 
