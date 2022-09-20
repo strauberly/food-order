@@ -4,12 +4,24 @@
 
 ---
 
+-- 19 Sept 2022 --
+
+- Took a minute to get the syntax down but meals are now successfully loaded from a supabase API. Yay documentation!
+
+---
+
+-- 18 Sept 2022 --
+
+- will utilize supabase for remote database.
+
+---
+
 -- 15 Sept 2022 --
 
 - Recieved additional specs for application.
-    - add checkout/order form.
-    - submit orders to firebase backend.
-    - fetch meals data from firebase backend.
+  - add checkout/order form.
+  - submit orders to remote backend.
+  - fetch meals data from remote backend.
 
 ---
 
