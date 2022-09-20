@@ -11,12 +11,18 @@ const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [httpError, setHTTPError] = useState();
 
   useEffect(() => {
     const fetchMeals = async () => {
+      const response = await fetch(supabase.from("meals").select("*"));
       const { data: meals } = await supabase.from("meals").select("*");
-      console.log(meals);
-      console.log(meals);
+
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
+      console.log(response);
 
       const loadedMeals = [];
 
@@ -29,9 +35,29 @@ const AvailableMeals = () => {
         });
       }
       setMeals(loadedMeals);
+      setIsLoading(false);
     };
-    fetchMeals();
+    fetchMeals().catch((error) => {
+      setIsLoading(false);
+      setHTTPError(error.message);
+    });
   }, []);
+
+  if (isLoading) {
+    return (
+      <section className={classes.MealsLoading}>
+        <p>Loading...</p>
+      </section>
+    );
+  }
+
+  if (httpError) {
+    return (
+      <section className={classes.MealsError}>
+        <p>{httpError}</p>
+      </section>
+    );
+  }
 
   const mealsList = meals.map((meal) => (
     <MealItem
