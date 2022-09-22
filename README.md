@@ -4,6 +4,12 @@
 
 ---
 
+-- 22 Sept 2022 --
+
+Added checkout form to cart modal. Next steps will be validation and submission.
+
+---
+
 -- 20 Sept 2022 --
 
 -Generic error handling implementation in AvailableMeals.js in case http request fails.
