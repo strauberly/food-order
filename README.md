@@ -4,6 +4,12 @@
 
 ---
 
+-- 23 Sept 2022 --
+
+Basic form validity checks and error notification implementation.
+
+---
+
 -- 22 Sept 2022 --
 
 Added checkout form to cart modal. Next steps will be validation and submission.
