@@ -4,6 +4,12 @@
 
 ---
 
+-- 24 Sept 2022 --
+
+Basic order transmission to Supabase implemented. Potentially reformat for ease of viewing. Also noting current calls to supabase do not appear very efficient and could be outsourced to clean up files. Also that we should be generating a more unique id for our orders.
+
+---
+
 -- 23 Sept 2022 --
 
 Basic form validity checks and error notification implementation.

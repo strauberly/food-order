@@ -5,6 +5,13 @@ import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
 import Checkout from "./Checkout";
 
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
 const Cart = (props) => {
   const [isCheckout, setIsCheckout] = useState(false);
   const cartCtx = useContext(CartContext);
@@ -20,6 +27,12 @@ const Cart = (props) => {
 
   const orderHandler = () => {
     setIsCheckout(true);
+  };
+
+  const submitOrderHandler = async (userData) => {
+    await supabase
+      .from("orders")
+      .insert([{ user: userData, orderedItems: cartCtx.items }]);
   };
 
   const modalActions = (
@@ -57,7 +70,9 @@ const Cart = (props) => {
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
-      {isCheckout && <Checkout onCancel={props.onClose} />}
+      {isCheckout && (
+        <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} />
+      )}
       {!isCheckout && modalActions}
     </Modal>
   );
